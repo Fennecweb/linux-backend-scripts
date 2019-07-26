@@ -1,0 +1,3 @@
+The NetworkFallbackScript is used to keep check on internet connectivity, and switch to an (emergency) fallback connection in case no connection can be made for a longer period of time.
+This is useful if for example, you have a dedicated headless (no console) machine that only has a single network adapter, but requires some complex network configuration that's prone to break with updates and alike.
+Note you should edit the script to fit your own use case. By default it'll try and bring up/down some networks with nmcli which are probably not present on your machine, and also only has a timeout of 5 seconds, which is probably too little for most.
