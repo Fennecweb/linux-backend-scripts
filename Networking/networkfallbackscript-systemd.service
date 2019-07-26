@@ -1,0 +1,9 @@
+[Unit]
+Description=Emergency DHCP Fallback connectivity script
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /usr/local/bin/networkfallbackscript.sh
+
+[Install]
+WantedBy=multi-user.target
